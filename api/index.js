@@ -1,5 +1,6 @@
 const app = require('express')();
-const PORT = 8080;
+// NOTE: May turn this into a variable so it can be hosted elsewhere a bit safer...(?)
+const PORT = 8000;
 
 const ft = require('./data/text.json');
 
