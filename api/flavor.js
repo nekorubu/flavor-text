@@ -4,6 +4,7 @@ const ft = require('../data/text.json');
 
 export default function handler(req, res) {
     // If the request is a GET one, send back a random flavor text
+    // TODO: Implement some way for users to be able to request a specific phrase, properly handling if a request is made for one that doesn't exist (out of bounds stuff)
     if (req.method === 'GET') {
         const flavor = randFT(); // Get random flavor text
         res.status(200).json(flavor);
