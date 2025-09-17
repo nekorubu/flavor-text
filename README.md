@@ -2,7 +2,7 @@
 
 A little project meant to play around with and learn REST APIs by building something personally useful to me. Still a work in progress.
 
-The API is hosted at [Vercel](https://vercel.com), and is available at [ft.asoulless.space/api/flavor](https://ft.asoulless.space/api/flavor) and [flavor-text.vercel.app/api/flavor](https://flavor-text.vercel.app/api/flavor). Sending a GET request (by doing `curl https://ft.asoulless.space/api/flavor`, for example) will send you back a random string of text from [this JSON array](./data/text.json). If you would like to change or add your own phrases, I recommend forking this repository, and editing that JSON array.
+The API is hosted on [Vercel](https://vercel.com), and is available at [ft.asoulless.space/api/flavor](https://ft.asoulless.space/api/flavor) and [flavor-text.vercel.app/api/flavor](https://flavor-text.vercel.app/api/flavor). Sending a GET request (by doing `curl https://ft.asoulless.space/api/flavor`, for example) will send you back a random string of text from [this JSON array](./data/text.json). If you would like to change or add your own phrases, I recommend forking this repository, and editing that JSON array.
 
 # AI Disclosure
 Given the controversial nature of generative AI and its usage, I want to try and be transparent about how I'm using generative AI for this project.
@@ -17,7 +17,7 @@ Import the GitHub repository, and have Vercel look at the root for the project. 
 <sup>I'm kinda writing that for myself who had an issue with this when I was trying to get this up and running at first.</sup>
 
 ## [Railway](https://railway.com/)
-Import the repository. It should detect Express.js automatically. The configuration file is at [the root of the project](./railway.toml)
+Import the repository. It should detect Express.js automatically. The configuration file is at [the root of the project](./railway.toml).
 
 ## [Render](https://render.com/)
 Import the repository. It should use `npm start` to run it.
