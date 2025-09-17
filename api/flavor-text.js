@@ -1,4 +1,3 @@
-const app = require('express')();
 const ft = require('./data/text.json');
 
 export default function handler(req, res) {
