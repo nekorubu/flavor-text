@@ -1,15 +1,19 @@
 {
-  "name": "flavor-text-api",
-  "version": "1.0.0",
-  "description": "",
+  "name": "flavor-text",
+  "version": "0.0.1",
+  "description": "A little project meant to play around with and learn REST APIs by building something personally useful to me. Still a work in progress.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nekorubu/flavor-text.git"
+  },
   "author": "nekobu",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^5.1.0"
-  }
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nekorubu/flavor-text/issues"
+  },
+  "homepage": "https://github.com/nekorubu/flavor-text#readme"
 }
