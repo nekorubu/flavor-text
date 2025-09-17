@@ -9,6 +9,16 @@ Given the controversial nature of generative AI and its usage, I want to try and
 
 I've made use of [Claude](https://claude.ai) to help with debugging and trying to get the API up and running. I've made sure to try and describe how it was used to help me with each file.
 
+# API endpoints
+## `/` [not included in Vercel Functions version]
+Returns information about the endpoints available. It's basically a JSON version of this section.
+
+## `/api/flavor`
+Returns back a random phrase. I'm thinking of implementing a way for users to request specific ones by an ID, but that'll hopefully come later.
+
+## `/api/health`
+A ~~vibe~~ health check endpoint. Simply returns back a JSON if everything's good and you sent a GET request.
+
 # Deployment
 I personally haven't tried these platforms (save for Vercel); all of these I got from using Claude. Please open up an issue if something goes wrong.
 
