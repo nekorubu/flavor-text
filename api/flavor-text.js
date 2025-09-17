@@ -1,4 +1,4 @@
-const ft = require('./data/text.json');
+const ft = require('../data/text.json');
 
 export default function handler(req, res) {
     // If the request is a GET one, send back a random flavor text
