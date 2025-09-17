@@ -1,4 +1,5 @@
 // This code was mainly written by Claude. I used it to try and get the API up and running, then changed a few variables once it was finally running.
+// Directory where random text should be.
 const ft = require('../data/text.json');
 
 export default function handler(req, res) {
