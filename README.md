@@ -28,5 +28,19 @@ You can see the Dockerfile [here](./dockerfile), and use this command to start i
 docker build -t flavor-api . && docker run -p 3000:3000 flavor-api
 ```
 
+## Bare Metal (if you just want to run the code on your own computer/server)
+Clone the repository
+```bash
+git clone https://github.com/nekorubu/flavor-text.git
+```
+Move into the folder
+```bash
+cd flavor-text/
+```
+Install the dependencies and start it
+```bash
+npm install && npm start
+```
+
 # Inspiration
 While I've been using these phrases for years now, the idea for implementing these random phrases mainly comes from [Advice Slip](https://adviceslip.com/). The phrases themselves are mainly references and funny little phrases.
