@@ -1,3 +1,6 @@
 # Ignore Node imported node packages and stuff
 node_modules/
 package-lock.json
+
+# Ignore VSCode directories
+.vscode/
