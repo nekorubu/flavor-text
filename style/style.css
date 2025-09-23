@@ -1,0 +1,53 @@
+/* Import theme */
+@import url(./heart.css);
+
+/* Fonts */
+/* Fustat */
+@import url('https://api.fonts.coollabs.io/css2?family=Fustat:wght@200..800&display=swap');
+/* Inter */
+@import url('https://api.fonts.coollabs.io/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 96vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--heart-ful-surface1);
+    color: var(--heart-ful-text);
+}
+
+h1 {
+    font-family: 'Fustat', sans-serif;
+    color: var(--heartful);
+}
+
+#flavor {
+    font-family: 'Inter', sans-serif;
+    color: var(--heart-ful-text);
+}
+
+button {
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    background-color: var(--heart-ful-text);
+    color: var(--heart-ful-surface0);
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    border: none;
+    text-decoration: none;
+}
+
+.content {
+    text-align: center;
+    margin-top: auto;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+}
+
+a {
+    color: var(--blue);
+}
