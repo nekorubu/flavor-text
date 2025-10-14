@@ -1,5 +1,5 @@
 /* Import theme */
-@import url(./heart.css);
+@import url(./asoulless.css);
 
 /* Fonts */
 /* Fustat */
@@ -13,8 +13,8 @@ body {
     min-height: 96vh;
     display: flex;
     flex-direction: column;
-    background-color: var(--heart-ful-surface1);
-    color: var(--heart-ful-text);
+    background-color: var(--surface1);
+    color: var(--text);
 }
 
 h1 {
@@ -24,14 +24,14 @@ h1 {
 
 #flavor {
     font-family: 'Inter', sans-serif;
-    color: var(--heart-ful-text);
+    color: var(--text);
 }
 
 button {
     font-family: 'Inter', sans-serif;
     font-size: 1em;
-    background-color: var(--heart-ful-text);
-    color: var(--heart-ful-surface0);
+    background-color: var(--text);
+    color: var(--surface0);
     padding: 0.5em 1em;
     border-radius: 8px;
     border: none;
