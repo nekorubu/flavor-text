@@ -2,7 +2,7 @@
 
 A little project meant to play around with and learn REST APIs by building something personally useful to me. Still a work in progress.
 
-The API is hosted on [Vercel](https://vercel.com), and is available at [ft.asoulless.space/api/flavor](https://ft.asoulless.space/api/flavor) and [flavor-text.vercel.app/api/flavor](https://flavor-text.vercel.app/api/flavor). Sending a GET request (by doing `curl https://ft.asoulless.space/api/flavor`, for example) will send you back a random string of text from [this JSON array](./data/text.json).
+The API is hosted on [Vercel](https://vercel.com), and is available at [ft.asoulless.space/api/flavor](https://ft.asoulless.space/api/flavor). [flavor-text.vercel.app/api/flavor](https://flavor-text.vercel.app/api/flavor) hosts the testing version ~~for when I make 30,000 pushes trying to get something to work lol~~. Sending a GET request (by doing `curl https://ft.asoulless.space/api/flavor`, for example) will send you back a random string of text from [this JSON array](./data/text.json).
 
 If you would like to deploy your own version, I recommend looking at this repository's ["hostable" branch](https://github.com/nekorubu/flavor-text/tree/hostable).
 
