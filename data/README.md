@@ -1,0 +1,2 @@
+# Data for the API
+This folder contains the JSON array containing every possible "flavor text" that could be returned in [text.json](./text.json). Feel free to add your own or remove some if you'd like.
