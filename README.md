@@ -1,36 +1,25 @@
-# nekobu's Flavor Text
-
-A little project meant to play around with and learn REST APIs by building something personally useful to me. Still a work in progress.
-
-The API is hosted on [Vercel](https://vercel.com), and is available at [ft.asoulless.space/api/flavor](https://ft.asoulless.space/api/flavor) and [flavor-text.vercel.app/api/flavor](https://flavor-text.vercel.app/api/flavor). Sending a GET request (by doing `curl https://ft.asoulless.space/api/flavor`, for example) will send you back a random string of text from [this JSON array](./data/text.json). If you would like to change or add your own phrases, I recommend forking this repository, and editing that JSON array.
+# nekobu's Flavor Text: the "hostable" branch
+This is where all of the files are for those who would like to deploy this API themselves. This version lacks the website that's available on the main version hosted on Vercel.
 
 # AI Disclosure
-Given the controversial nature of generative AI and its usage, I want to try and be transparent about how I'm using generative AI for this project.
-
-I've made use of [Claude](https://claude.ai) to help with debugging and trying to get the API up and running. I've made sure to try and describe how it was used to help me with each file.
+I've made use of [Claude](https://claude.ai) to help with debugging and trying to get the API up and running, as well as with the [deployment instructions](#deployment), as I haven't personally tried these platforms (save for Vercel). Please open up an issue if something goes wrong.
 
 # API endpoints
+The endpoints are the same here as in the [main branch](https://github.com/nekorubu/flavor-text/tree/main#api-endpoints), save for the one listed below
+
 ## `/` [not included in Vercel Functions version]
 Returns information about the endpoints available. It's basically a JSON version of this section.
 
-## `/api/flavor`
-Returns back a random phrase. I'm thinking of implementing a way for users to request specific ones by an ID, but that'll hopefully come later.
-
-## `/api/health`
-A ~~vibe~~ health check endpoint. Simply returns back a JSON if everything's good and you sent a GET request.
-
 # Deployment
-I personally haven't tried these platforms (save for Vercel); all of these I got from using Claude. Please open up an issue if something goes wrong.
-
 ## [Vercel](https://vercel.com) (using Vercel Functions)
 Import the GitHub repository, and have Vercel look at the root for the project. It should use the `/api` folder.
 <sup>I'm kinda writing that for myself who had an issue with this when I was trying to get this up and running at first.</sup>
 
 ## [Railway](https://railway.com/)
-Import the repository. It should detect Express.js automatically. The configuration file is at [the root of the project](./railway.toml).
+Import the repository, and set the branch connected to your GitHub Autodeploys to the "hostable" branch. It should detect Express.js automatically. The configuration file is at [the root of the project](./railway.toml).
 
 ## [Render](https://render.com/)
-Import the repository. It should use `npm start` to run it.
+Import the repository and set the branch to the "hostable" one. It should use `npm start` to run it.
 
 ## Docker
 You can see the Dockerfile [here](./dockerfile), and use this command to start it:
@@ -41,7 +30,8 @@ docker build -t flavor-api . && docker run -p 3000:3000 flavor-api
 ## Bare Metal (if you just want to run the code on your own computer/server)
 Clone the repository
 ```bash
-git clone https://github.com/nekorubu/flavor-text.git
+# The "-b hostable" flag is used to skip having to switch to that branch
+git clone -b hostable https://github.com/nekorubu/flavor-text.git
 ```
 Move into the folder
 ```bash
@@ -51,6 +41,3 @@ Install the dependencies and start it
 ```bash
 npm install && npm start
 ```
-
-# Inspiration
-While I've been using these phrases for years now, the idea for implementing these random phrases mainly comes from [Advice Slip](https://adviceslip.com/). The phrases themselves are mainly references and funny little phrases.
