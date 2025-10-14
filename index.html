@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- TODO: At some point, separate the website from the API code completely? -->
 <html>
 <head>
     <meta charset='utf-8'>
@@ -12,7 +13,11 @@
     <div class="content">
         <h1>nekobu's Flavor Text</h1>
         <h2 id="flavor">This is a test!</h2>
-        <button>
+        <button id="flavFetch" type="button" onclick="document.getElementById('flavor').innerHTML = ">
+            <!-- TODO: When clicking this button,
+             - Make this button read "..."
+             - Make the h2 actually show up with "..." while waiting for the data
+             - Make the h2's text whatever data is recieved -->
             Get some flavor...
         </button>
     </div>
